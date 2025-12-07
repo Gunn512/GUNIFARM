@@ -1,0 +1,139 @@
+<div class="navbar">
+  <ul class="navbar-main">
+    <!-- navbar-main -->
+    <li><a class="active" href="../../index.html">Trang Chủ</a></li>
+    <li class="dropdown">
+      <!-- Page Rau Củ Quả -->
+      <a href="../../html/product.html"
+        >Rau Củ Quả
+        <i data-lucide="chevron-down" class="dropdown-arrow"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="../../html/product.html">Rau xanh</a></li>
+        <li><a href="../../html/product.html">Củ quả</a></li>
+        <li><a href="../../html/product.html">Trái cây</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <!-- Page Vườn nhà -->
+      <a href="../../html/home-garden.html"
+        >Vườn Nhà
+        <i data-lucide="chevron-down" class="dropdown-arrow"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="../../html/home-garden.html">Hạt giống</a></li>
+        <li><a href="../../html/home-garden.html">Dụng cụ làm vườn</a></li>
+        <li><a href="../../html/home-garden.html">Phân bón hữu cơ</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <!-- Page Blog -->
+      <a href="../../html/blog.html"
+        >Blog
+        <i data-lucide="chevron-down" class="dropdown-arrow"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="../../html/blog.html">Kiến thức</a></li>
+        <li><a href="../../html/blog.html">Mẹo làm vườn</a></li>
+        <li><a href="../../html/blog.html">Tin tức sức khỏe</a></li>
+      </ul>
+    </li>
+    <li><a href="../../html/about.html">Về chúng tôi</a></li>
+    <li><a href="../../html/contact.html">Liên hệ</a></li>
+  </ul>
+
+  <!-- ======================= NAVBAR RIGHT =================== -->
+  <div class="navbar-right">
+    <div class="icon-right shopping-icon">
+      <a href="../../html/shopping-cart.html">
+        <i data-lucide="shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+
+    <a
+      href="../../html/login.html"
+      class="icon-right user-icon"
+      onclick="goToAccountPage()"
+    >
+      <i data-lucide="circle-user"></i>
+    </a>
+  </div>
+
+  <!-- ======================= NAVBAR MOBILE ======================== -->
+  <!-- Icon Menu cho Mobile -->
+  <div class="mobile-navbar">
+    <input
+      type="checkbox"
+      name="menu-checkbox"
+      id="menu-checkbox"
+      class="menu-checkbox"
+      hidden
+    />
+    <label for="menu-checkbox">
+      <svg
+        class="icon-menu"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 640"
+      >
+        <path
+          fill="currentColor"
+          d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+        />
+      </svg>
+    </label>
+
+    <!-- Overlay -->
+    <label for="menu-checkbox" class="menu-overlay"></label>
+
+    <!-- menu content -->
+    <div class="menu-drawer">
+      <!-- menu top -->
+      <div class="navbar-drawer-top">
+        <!-- logo -->
+        <a href="../../index.html" class="logo drawer_img">
+          <img src="../../IMG/logo-white.png" />
+        </a>
+
+        <!-- icon close -->
+        <label for="menu-checkbox">
+          <svg
+            class="close__menu"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+          >
+            <path
+              fill="currentColor"
+              d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C221.6 240.4 221.6 255.6 231 264.9L286 319.9L231 374.9C221.6 384.3 221.6 399.5 231 408.8C240.4 418.1 255.6 418.2 264.9 408.8L319.9 353.8L374.9 408.8C384.3 418.2 399.5 418.2 408.8 408.8C418.1 399.4 418.2 384.2 408.8 374.9L353.8 319.9L408.8 264.9C418.2 255.5 418.2 240.3 408.8 231C399.4 221.7 384.2 221.6 374.9 231L319.9 286L264.9 231C255.5 221.6 240.3 221.6 231 231z"
+            />
+          </svg>
+        </label>
+      </div>
+
+      <!-- nav mobile -->
+      <div class="menu-list">
+        <ul class="navbar-main">
+          <li><a href="../../index.html">Trang Chủ</a></li>
+          <li class="dropdown">
+            <!-- Page Rau Củ Quả -->
+            <a href="../../html/product.html">Rau Củ Quả</a>
+          </li>
+
+          <li class="dropdown">
+            <!-- Page Vườn nhà -->
+            <a href="../../html/home-garden.html">Vườn Nhà</a>
+          </li>
+
+          <li class="dropdown">
+            <!-- Page Blog -->
+            <a href="../../html/blog.html">Blog</a>
+          </li>
+          <li><a href="../../html/about.html">Về chúng tôi</a></li>
+          <li><a href="../../html/contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
