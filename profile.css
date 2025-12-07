@@ -1,0 +1,371 @@
+/* import font chu */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+
+/* Khai bao bien */
+:root {
+    --color-bg: #29404a;
+    --color-header: #21323b;
+    --color-header2: #0dad23;
+    --color-bg-main: #fafafa;
+    --color-text: #222222;
+    --color-text2: #fafafa;
+    --color-text-hover: #c8f3f8;
+    --color-border: #eee;
+    --color-hover: #84bf04;
+    --color-active: #0420bf;
+    --font-heading: Gelasio, serif;
+    --font-family-base: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    --font-button: "Wix Madefor Display", sans-serif;
+}
+
+/* =========================== Profile section ========================= */
+.profile-section {
+    padding: 20px 40px;
+    width: 100%;
+    height: 80px;
+    background: url(../IMG/background_small.jpg) no-repeat center center/cover fixed;
+    color: var(--color-text2);
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+}
+
+.profile-section .breadcrumb {
+    color: #ccc;
+}
+
+.profile-section .breadcrumb .fa-home {
+    margin-right: 5px;
+}
+
+.profile-section .breadcrumb a {
+    color: #ccc;
+    margin-right: 5px;
+}
+
+.profile-section .breadcrumb span {
+    color: var(--white);
+}
+
+/* =========================== MAIN ========================= */
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 300px;
+    background-image: linear-gradient(to right, #e0f4ff, #d8f9ff);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-right: 20px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    color: var(--color-header);
+}
+
+.user-info {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-blue);
+}
+
+.user-info h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+
+}
+
+.user-info h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+    margin-bottom: 5px;
+}
+
+.sidebar-menu a i {
+    margin-right: 15px;
+    color: var(--dark-gray);
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-menu a.active,
+.sidebar-menu a:hover {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+}
+
+.sidebar-menu a.active i,
+.sidebar-menu a:hover i {
+    color: var(--primary-blue);
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.review-section {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.review-tabs {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.review-tabs button {
+    border: none;
+    background-image: linear-gradient(to right, #e0f4ff, #d8f9ff);
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--dark-gray);
+    transition: color 0.2s, border-bottom-color 0.2s;
+    border-radius: 10px;
+}
+
+.review-tabs button.active {
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
+}
+
+.product-review-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.product-review-item .review-item {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.product-review-item .review-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.product-review-item .product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.product-review-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.product-review-item .product-details h4 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.product-review-item .product-details .product-brand {
+    font-size: 1.5rem;
+}
+
+/* Ngôi sao */
+.product-review-item .product-rating {
+    margin-bottom: 5px;
+    margin-left: 350px;
+    gap: 5px;
+    font-size: 1.5em;
+    color: rgb(233, 199, 10);
+}
+
+.individual-review-item {
+    padding: 0 10px;
+}
+
+.individual-review-item .review-date {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* ============================================== */
+/*  Responsive */
+/* ============================================== */
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    /* Sidebar chuyen thanh dang ngang */
+    .sidebar {
+        width: 100%;
+        position: static;
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: none;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    .user-info img {
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .user-info h3 {
+        display: none;
+    }
+
+    .user-info h2 {
+        margin: 0;
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .sidebar-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .sidebar-menu a {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        font-size: 0px;
+    }
+
+    .sidebar-menu a i {
+        margin: 0;
+        font-size: 2.2rem;
+        column-gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Main content: sản phẩm thành từng dòng */
+    .product-review-item .review-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-review-item .product-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-review-item .product-rating {
+        margin-left: 0;
+    }
+
+    .review-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    .review-item img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 6px;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+
+    /* Khối chứa tên + brand + rating */
+    .product-info {
+        position: absolute;
+        right: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        margin-left: -100px;
+    }
+
+    .product-details {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    .product-details h4 {
+        font-size: 1em !important;
+        margin: 0;
+    }
+
+    .product-brand {
+        font-size: 1.2rem !important;
+        font-style: italic;
+        /* hoặc badge nếu muốn nổi bật */
+    }
+
+    /* Rating */
+    .product-rating {
+        font-size: 1.3rem !important;
+        color: rgb(233, 199, 10);
+        align-self: flex-end;
+    }
+}

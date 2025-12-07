@@ -1,0 +1,555 @@
+[
+  {
+    "id": 1,
+    "name": "Bơ Sáp Đăk Lăk",
+    "brand": "GUNI FARM",
+    "category": "Trái cây",
+    "rating": 4.8,
+    "price": "85.000 VNĐ",
+    "image": "IMG/fruit/bo/bo-00.png",
+    "description": "Bơ sáp Đăk Lăk được trồng theo phương pháp hữu cơ, quả to, cơm dẻo, béo ngậy. Rất thích hợp để ăn tươi hoặc làm sinh tố.",
+    "unitPrice": 85000,
+    "mainImage": "IMG/fruit/bo/bo-00.png",
+    "thumbnails": [
+      "IMG/fruit/bo/bo-02.jpg",
+      "IMG/fruit/bo/bo-01.jpg",
+      "IMG/fruit/bo/bo-03.jpg"
+    ],
+    "reviews": [
+      {
+        "user": "Nguyễn Văn A",
+        "rating": 4.5,
+        "date": "01/08/2025",
+        "text": "Bơ rất ngon, dẻo và béo. Giao hàng nhanh và đóng gói cẩn thận. Rất hài lòng."
+      },
+      {
+        "user": "Trần Thị B",
+        "date": "29/07/2025",
+        "text": "Sản phẩm chất lượng tốt, ăn rất thơm. Sẽ ủng hộ shop dài dài."
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": 2,
+    "name": "Cà chua Đà Lạt",
+    "brand": "GUNI FARM",
+    "category": "Rau củ",
+    "rating": 4.5,
+    "price": "35.000 VNĐ",
+    "image": "IMG/fruit/cachua/cachua-02.jpg",
+    "description": "Cà chua tươi ngon, ngọt, được trồng tại Đà Lạt theo tiêu chuẩn VietGAP. Rất tốt cho sức khỏe.",
+    "unitPrice": 35000,
+    "mainImage": "IMG/fruit/cachua/cachua-02.jpg",
+    "thumbnails": [
+      "IMG/fruit/cachua/cachua-01.jpg",
+      "IMG/fruit/cachua/cachua-02.jpg",
+      "IMG/fruit/cachua/cachua-03.jpg"
+    ],
+    "reviews": [
+      {
+        "user": "Nguyễn Văn C",
+        "rating": 5.0,
+        "date": "02/08/2025",
+        "text": "Cà chua rất tươi và ngọt, dùng làm salad ngon tuyệt."
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": 3,
+    "name": "Súp lơ xanh",
+    "brand": "GUNI FARM",
+    "category": "Rau xanh",
+    "rating": 4.7,
+    "price": "40.000 VNĐ",
+    "image": "IMG/fruit/suplo/suplo-00.jpg",
+    "description": "Súp lơ xanh giàu vitamin C và K, rất thích hợp cho các món salad hoặc luộc. ",
+    "unitPrice": 40000,
+    "mainImage": "IMG/fruit/suplo/suplo-00.jpg",
+    "thumbnails": [
+      "IMG/fruit/suplo/suplo-00.jpg",
+      "IMG/fruit/suplo/suplo-01.jpg",
+      "IMG/fruit/suplo/suplo-02.jpg"
+    ],
+    "reviews": [
+      {
+        "user": "Trần Văn D",
+        "rating": 3.9,
+        "date": "03/08/2025",
+        "text": "Súp lơ xanh giòn, tươi, luộc ăn rất ngon."
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": 4,
+    "name": "Bắp cải xanh",
+    "brand": "GUNI FARM",
+    "category": "Rau xanh",
+    "rating": 4.9,
+    "price": "25.000 VNĐ",
+    "image": "IMG/fruit/bapcai/bapcai-00.jpg",
+    "description": "Bắp cải xanh tươi, giòn, chứa nhiều chất xơ. Là thực phẩm lý tưởng cho một chế độ ăn lành mạnh.",
+    "unitPrice": 25000,
+    "mainImage": "IMG/fruit/bapcai/bapcai-00.jpg",
+    "thumbnails": [
+      "IMG/fruit/bapcai/bapcai-00.jpg",
+      "IMG/fruit/bapcai/bapcai-01.jpg",
+      "IMG/fruit/bapcai/bapcai-04.jpg"
+    ],
+    "reviews": [
+      {
+        "user": "Lê Thị E",
+        "rating": 4.9,
+        "date": "04/08/2025",
+        "text": "Bắp cải tươi ngon, giòn, gói gọn gàng."
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": 5,
+    "name": "Dâu tây Đà Lạt",
+    "brand": "FreshCo",
+    "category": "Trái cây",
+    "rating": 4.9,
+    "price": "75.000 VNĐ",
+    "image": "IMG/fruit/dautay/dautay-01.jpg",
+    "description": "Dâu tây Đà Lạt giống Nhật, quả to mọng, vị ngọt thơm đặc trưng. Thích hợp để ăn tươi hoặc làm mứt.",
+    "unitPrice": 75000,
+    "mainImage": "IMG/fruit/dautay/dautay-01.jpg",
+    "thumbnails": [
+      "IMG/fruit/dautay/dautay-01.jpg",
+      "IMG/fruit/dautay/dautay-02.jpg",
+      "IMG/fruit/dautay/dautay-03.jpg"
+    ],
+    "reviews": [
+      {
+        "user": "Phạm Văn F",
+        "rating": 5.0,
+        "date": "05/08/2025",
+        "text": "Dâu tây ngọt, mọng nước, rất đáng tiền."
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": 6,
+    "name": "Khoai tây hữu cơ",
+    "brand": "Organic Life",
+    "category": "Củ quả",
+    "rating": 4.6,
+    "price": "30.000 VNĐ",
+    "image": "IMG/fruit/khoaitay/potato-03.jpg",
+    "description": "Khoai tây hữu cơ, củ vừa phải, thịt chắc. Thường được dùng để nấu súp, chiên hoặc làm salad.",
+    "unitPrice": 30000,
+    "mainImage": "IMG/fruit/khoaitay/potato-03.jpg",
+    "thumbnails": [
+      "IMG/fruit/khoaitay/potato-03.jpg",
+      "IMG/fruit/khoaitay/potato-01.jpg",
+      "IMG/fruit/khoaitay/potato-02.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 7,
+    "name": "Bắp cải tím",
+    "brand": "GUNI FARM",
+    "category": "Rau xanh",
+    "rating": 4.8,
+    "price": "32.000 VNĐ",
+    "image": "IMG/fruit/bapcaitim/bapcaitim-02.jpg",
+    "description": "Bắp cải tím giòn, ngọt, màu sắc đẹp mắt. Là nguyên liệu tuyệt vời cho các món gỏi hoặc salad.",
+    "unitPrice": 32000,
+    "mainImage": "IMG/fruit/bapcaitim/bapcaitim-02.jpg",
+    "thumbnails": [
+      "IMG/fruit/bapcaitim/bapcaitim-02.jpg",
+      "IMG/fruit/bapcaitim/bapcaitim-01.jpg",
+      "IMG/fruit/bapcaitim/bapcaitim-03.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 8,
+    "name": "Chuối già",
+    "brand": "GUNI FARM",
+    "category": "Trái cây",
+    "rating": 4.3,
+    "price": "15.000 VNĐ",
+    "image": "IMG/fruit/chuoigia/banana-02.jpg",
+    "description": "Chuối già chín vàng tự nhiên, dẻo ngọt. Là món ăn vặt bổ dưỡng, cung cấp năng lượng nhanh chóng.",
+    "unitPrice": 15000,
+    "mainImage": "IMG/fruit/chuoigia/banana-02.jpg",
+    "thumbnails": [
+      "IMG/fruit/chuoigia/banana-02.jpg",
+      "IMG/fruit/chuoigia/banana-01.jpg",
+      "IMG/fruit/chuoigia/banana-03.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 9,
+    "name": "Thanh long ruột đỏ",
+    "brand": "FreshCo",
+    "category": "Trái cây",
+    "rating": 4.8,
+    "price": "50.000 VNĐ",
+    "image": "IMG/fruit/thanhlong/thanhlong-03.jpg",
+    "description": "Thanh long ruột đỏ, vị ngọt thanh, nhiều nước. Rất tốt cho hệ tiêu hóa.",
+    "unitPrice": 50000,
+    "mainImage": "IMG/fruit/thanhlong/thanhlong-03.jpg",
+    "thumbnails": [
+      "IMG/fruit/thanhlong/thanhlong-03.jpg",
+      "IMG/fruit/thanhlong/thanhlong-01.jpg",
+      "IMG/fruit/thanhlong/thanhlong-02.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 10,
+    "name": "Ớt chuông vàng",
+    "brand": "GUNI FARM",
+    "category": "Rau củ",
+    "rating": 4.6,
+    "price": "38.000 VNĐ",
+    "image": "IMG/fruit/otchuong/pepper-03.jpg",
+    "description": "Ớt chuông vàng giòn ngọt, giàu vitamin C. Phù hợp làm món xào hoặc salad.",
+    "unitPrice": 38000,
+    "mainImage": "IMG/fruit/otchuong/pepper-03.jpg",
+    "thumbnails": [
+      "IMG/fruit/otchuong/pepper-03.jpg",
+      "IMG/fruit/otchuong/pepper-01.jpg",
+      "IMG/fruit/otchuong/pepper-02.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 11,
+    "name": "Dưa leo",
+    "brand": "FreshCo",
+    "category": "Rau củ",
+    "rating": 4.5,
+    "price": "22.000 VNĐ",
+    "image": "IMG/fruit/dualeo/cucumber-01.jpg",
+    "description": "Dưa leo tươi giòn, không thuốc bảo vệ thực vật. Dùng ăn sống hoặc làm gỏi.",
+    "unitPrice": 22000,
+    "mainImage": "IMG/fruit/dualeo/cucumber-01.jpg",
+    "thumbnails": [
+      "IMG/fruit/dualeo/cucumber-01.jpg",
+      "IMG/fruit/dualeo/cucumber-02.jpg",
+      "IMG/fruit/dualeo/cucumber-03.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 12,
+    "name": "Cà rốt Đà Lạt",
+    "brand": "Organic Life",
+    "category": "Củ quả",
+    "rating": 4.8,
+    "price": "28.000 VNĐ",
+    "image": "IMG/fruit/carot/carrot-01.jpg",
+    "description": "Cà rốt tươi giòn, vị ngọt thanh, giàu beta-caroten tốt cho mắt và da.",
+    "unitPrice": 28000,
+    "mainImage": "IMG/fruit/carot/carrot-01.jpg",
+    "thumbnails": [
+      "IMG/fruit/carot/carrot-01.jpg",
+      "IMG/fruit/carot/carrot-02.jpg",
+      "IMG/fruit/carot/carrot-03.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 13,
+    "name": "Bí đỏ",
+    "brand": "GUNI FARM",
+    "category": "Củ quả",
+    "rating": 4.7,
+    "price": "18.000 VNĐ",
+    "image": "IMG/fruit/bido/bido-01.jpg",
+    "description": "Bí đỏ mềm, ngọt, nhiều chất xơ và vitamin A. Dùng nấu canh hoặc hấp đều ngon.",
+    "unitPrice": 18000,
+    "mainImage": "IMG/fruit/bido/bido-01.jpg",
+    "thumbnails": [
+      "IMG/fruit/bido/bido-01.jpg",
+      "IMG/fruit/bido/bido-02.jpg",
+      "IMG/fruit/bido/bido-03.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 14,
+    "name": "Bí ngòi sạch",
+    "brand": "Organic Life",
+    "category": "Rau củ",
+    "rating": 4.6,
+    "price": "26.000 VNĐ",
+    "image": "IMG/fruit/bingoi/bingoi-03.jpg",
+    "description": "Bí ngòi giòn mát, trồng theo tiêu chuẩn hữu cơ. Rất tốt để nấu canh thanh nhiệt.",
+    "unitPrice": 26000,
+    "mainImage": "IMG/fruit/bingoi/bingoi-03.jpg",
+    "thumbnails": [
+      "IMG/fruit/bingoi/bingoi-03.jpg",
+      "IMG/fruit/bingoi/bingoi-02.jpg",
+      "IMG/fruit/bingoi/bingoi-01.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 15,
+    "name": "Rau mồng tơi xanh",
+    "brand": "GUNI FARM",
+    "category": "Rau xanh",
+    "rating": 4.7,
+    "price": "18.000 VNĐ",
+    "image": "IMG/fruit/mongtoi/mongtoi-01.jpg",
+    "description": "Rau mồng tơi xanh mềm, ngọt, giàu chất sắt. Tốt cho máu và hệ tiêu hóa.",
+    "unitPrice": 18000,
+    "mainImage": "IMG/fruit/mongtoi/mongtoi-01.jpg",
+    "thumbnails": [
+      "IMG/fruit/mongtoi/mongtoi-01.jpg",
+      "IMG/fruit/mongtoi/mongtoi-02.jpg",
+      "IMG/fruit/mongtoi/mongtoi-03.jpg"
+    ],
+    "reviews": [],
+    "type": "product"
+  },
+  {
+    "id": 16,
+    "name": "Hạt giống cà chua",
+    "brand": "GUNI FARM",
+    "category": "Hạt giống",
+    "rating": 4.7,
+    "price": "12.000 VNĐ",
+    "image": "IMG/home-garden/hatgiongcachua/tomato-seed-02.jpg",
+    "description": "Hạt giống cà chua dễ trồng, cho trái mọng nước và ngọt.",
+    "unitPrice": 12000,
+    "mainImage": "IMG/home-garden/hatgiongcachua/tomato-seed-02.jpg",
+    "thumbnails": [
+      "IMG/home-garden/hatgiongcachua/tomato-seed-02.jpg",
+      "IMG/home-garden/hatgiongcachua/tomato-seed-01.jpg",
+      "IMG/home-garden/hatgiongcachua/tomato-seed-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 17,
+    "name": "Hạt giống rau xà lách",
+    "brand": "GUNI FARM",
+    "category": "Hạt giống",
+    "rating": 4.7,
+    "price": "10.000 VNĐ",
+    "image": "IMG/home-garden/hatgiongxalach/salad-01.jpg",
+    "description": "Hạt giống rau xà lách cho lá giòn, tươi và sạch.",
+    "unitPrice": 10000,
+    "mainImage": "IMG/home-garden/hatgiongxalach/salad-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/hatgiongxalach/salad-01.jpg",
+      "IMG/home-garden/hatgiongxalach/salad-02.jpg",
+      "IMG/home-garden/hatgiongxalach/salad-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 18,
+    "name": "Hạt giống cải ngọt",
+    "brand": "GUNI FARM",
+    "category": "Hạt giống",
+    "rating": 4.7,
+    "price": "11.000 VNĐ",
+    "image": "IMG/home-garden/hatgiongcaingot/caingot-01.jpg",
+    "description": "Hạt giống cải ngọt cho cây phát triển nhanh, lá xanh tươi.",
+    "unitPrice": 11000,
+    "mainImage": "IMG/home-garden/hatgiongcaingot/caingot-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/hatgiongcaingot/caingot-01.jpg",
+      "IMG/home-garden/hatgiongcaingot/caingot-02.jpg",
+      "IMG/home-garden/hatgiongcaingot/caingot-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 19,
+    "name": "Phân bón hữu cơ vi sinh",
+    "brand": "GUNI FARM",
+    "category": "Phân bón",
+    "rating": 4.8,
+    "price": "25.000 VNĐ",
+    "image": "IMG/home-garden/phanbon/phanbon-01.jpg",
+    "description": "Phân bón hữu cơ vi sinh giúp cải tạo đất, tăng năng suất.",
+    "unitPrice": 25000,
+    "mainImage": "IMG/home-garden/phanbon/phanbon-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/phanbon/phanbon-02.jpg",
+      "IMG/home-garden/phanbon/phanbon-01.jpg",
+      "IMG/home-garden/phanbon/phanbon-02.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 20,
+    "name": "Phân gà hoai mục",
+    "brand": "GUNI FARM",
+    "category": "Phân bón",
+    "rating": 4.8,
+    "price": "18.000 VNĐ",
+    "image": "IMG/home-garden/phanga/phanga-01.jpg",
+    "description": "Phân gà hoai mục giàu dinh dưỡng cho rau củ.",
+    "unitPrice": 18000,
+    "mainImage": "IMG/home-garden/phanga/phanga-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/phanga/phanga-01.jpg",
+      "IMG/home-garden/phanga/phanga-02.jpg",
+      "IMG/home-garden/phanga/phanga-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 21,
+    "name": "Phân trùn quế",
+    "brand": "GUNI FARM",
+    "category": "Phân bón",
+    "rating": 4.8,
+    "price": "22.000 VNĐ",
+    "image": "IMG/home-garden/phanga/phanga-02.jpg",
+    "description": "Phân trùn quế cung cấp vi sinh vật có lợi cho cây.",
+    "unitPrice": 22000,
+    "mainImage": "IMG/home-garden/phanga/phanga-02.jpg",
+    "thumbnails": [
+      "IMG/home-garden/phanga/phanga-02.jpg",
+      "IMG/home-garden/phanga/phanga-01.jpg",
+      "IMG/home-garden/phanga/phanga-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 22,
+    "name": "Đất sạch trồng rau",
+    "brand": "GUNI FARM",
+    "category": "Đất trồng",
+    "rating": 4.9,
+    "price": "30.000 VNĐ",
+    "image": "IMG/home-garden/datsach/datsach-01.jpg",
+    "description": "Đất sạch tơi xốp, phù hợp cho mọi loại rau.",
+    "unitPrice": 30000,
+    "mainImage": "IMG/home-garden/datsach/datsach-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/datsach/datsach-01.jpg",
+      "IMG/home-garden/datsach/datsach-02.jpg",
+      "IMG/home-garden/datsach/datsach-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 23,
+    "name": "Đất hữu cơ Tribat",
+    "brand": "GUNI FARM",
+    "category": "Đất trồng",
+    "rating": 4.9,
+    "price": "28.000 VNĐ",
+    "image": "IMG/home-garden/dathuuco/dathuuco-01.jpg",
+    "description": "Đất hữu cơ Tribat tăng độ ẩm và dinh dưỡng cho đất.",
+    "unitPrice": 28000,
+    "mainImage": "IMG/home-garden/dathuuco/dathuuco-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/dathuuco/dathuuco-01.jpg",
+      "IMG/home-garden/dathuuco/dathuuco-02.jpg",
+      "IMG/home-garden/dathuuco/dathuuco-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 24,
+    "name": "Bình tưới nước cầm tay",
+    "brand": "GUNI FARM",
+    "category": "Dụng cụ",
+    "rating": 4.9,
+    "price": "19.000 VNĐ",
+    "image": "  IMG/home-garden/binhnuoc/binhtuoinuoc-01.jpg",
+    "description": "Bình tưới nhỏ gọn, dễ sử dụng cho vườn nhỏ.",
+    "unitPrice": 19000,
+    "mainImage": "IMG/home-garden/binhnuoc/binhtuoinuoc-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/binhnuoc/binhtuoinuoc-01.jpg",
+      "IMG/home-garden/binhnuoc/binhtuoinuoc-02.jpg",
+      "IMG/home-garden/binhnuoc/binhtuoinuoc-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 25,
+    "name": "Xẻng làm vườn mini",
+    "brand": "GUNI FARM",
+    "category": "Dụng cụ",
+    "rating": 5.0,
+    "price": "15.000 VNĐ",
+    "image": "IMG/home-garden/xeng/xeng-01.jpg",
+    "description": "Xẻng mini tiện lợi cho các công việc trồng cây nhỏ.",
+    "unitPrice": 15000,
+    "mainImage": "IMG/home-garden/xeng/xeng-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/xeng/xeng-01.jpg",
+      "IMG/home-garden/xeng/xeng-02.jpg",
+      "IMG/home-garden/xeng/xeng-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 26,
+    "name": "Hạt giống rau chân vịt",
+    "brand": "GUNI FARM",
+    "category": "Hạt giống",
+    "rating": 4.6,
+    "price": "10.000 VNĐ",
+    "image": "IMG/home-garden/hatgiongrauchanvit/chanvit-01.jpg",
+    "description": "Rau chân vịt xanh mướt, dễ trồng, thích hợp trồng tại nhà.",
+    "unitPrice": 10000,
+    "mainImage": "IMG/home-garden/hatgiongrauchanvit/chanvit-01.jpg",
+    "thumbnails": [
+      "IMG/home-garden/hatgiongrauchanvit/chanvit-01.jpg",
+      "IMG/home-garden/hatgiongrauchanvit/chanvit-02.jpg",
+      "IMG/home-garden/hatgiongrauchanvit/chanvit-03.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  },
+  {
+    "id": 27,
+    "name": "Kéo cắt cành cây",
+    "brand": "GUNI FARM",
+    "category": "Dụng cụ",
+    "rating": 4.2,
+    "price": "29.000 VNĐ",
+    "image": "IMG/home-garden/keo/keo-03.jpg",
+    "description": "Kéo sắc bén, dễ cắt các loại cành vừa và nhỏ.",
+    "unitPrice": 29000,
+    "mainImage": "IMG/home-garden/keo/keo-03.jpg",
+    "thumbnails": [
+      "IMG/home-garden/keo/keo-03.jpg",
+      "IMG/home-garden/keo/keo-01.jpg",
+      "IMG/home-garden/keo/keo-02.jpg"
+    ],
+    "reviews": [],
+    "type": "home-garden"
+  }
+]
