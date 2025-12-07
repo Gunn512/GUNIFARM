@@ -1,5 +1,3 @@
-// blog-detail.js - Xử lý logic cho trang chi tiết bài viết
-
 document.addEventListener("DOMContentLoaded", () => {
   console.log("blog-detail.js đã được tải.");
 
