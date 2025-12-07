@@ -98,3 +98,30 @@ chatInput.addEventListener("keypress", (e) => {
     chatContent.scrollTop = chatContent.scrollHeight;
   }
 });
+
+// Script thêm class active
+document.addEventListener("DOMContentLoaded", function () {
+  var currentLocation = window.location.pathname.split("/").pop();
+
+  if (currentLocation === "") {
+    currentLocation = "index.html";
+  }
+
+  var menuLinks = document.querySelectorAll(".navbar-main a, .menu-list a");
+
+  menuLinks.forEach(function (link) {
+    var linkHref = link.getAttribute("href");
+
+    if (linkHref === currentLocation) {
+      link.classList.add("active");
+
+      var parentItem = link.closest(".dropdown");
+      if (parentItem) {
+        var parentLink = parentItem.querySelector("a");
+        if (parentLink) {
+          parentLink.classList.add("active");
+        }
+      }
+    }
+  });
+});
