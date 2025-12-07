@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Thu vien font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <!-- Thu vien bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Tiêu đề nhỏ -->
+    <link rel="icon" type="image/x-icon" href="../IMG/logo-xanh.png" />
+    <title>Guni Farm</title>
+    <!-- Responsive -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- <link rel="stylesheet" href="../css/product-responsive.css"> -->
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <div id="outer">
+      <!-- =================== DISCOUNT ==================== -->
+      <div id="offer"></div>
+
+      <!-- ==================== HEADER ======================= -->
+      <div id="header-placeholder"></div>
+
+      <!-- ======================= NAVBAR ======================== -->
+      <div id="navbar-placeholder"></div>
+
+      <!-- ============================= MAIN ========================== -->
+      <div class="main">
+        <header class="page-header">
+          <h1>Giỏ hàng của bạn</h1>
+        </header>
+
+        <main class="container">
+          <!-- Cot trai - Gio hang -->
+          <section class="cart-section">
+            <!-- Danh sach san pham render tu js -->
+            <div id="cart-items" class="cart-items" aria-live="polite"></div>
+
+            <!-- Ma giam gia -->
+            <div class="discount-code">
+              <input type="text" placeholder="Nhập mã giảm giá" />
+              <button>Áp dụng</button>
+            </div>
+
+            <!-- Total -->
+            <div class="totals-box">
+              <h3>Tổng tiền</h3>
+              <div class="totals-row">
+                <span>Tổng số tiền</span>
+                <span id="subtotal">0 VNĐ</span>
+              </div>
+              <div class="totals-row">
+                <span>Thuế (8%)</span>
+                <span id="tax">0 VNĐ</span>
+              </div>
+              <div class="totals-row">
+                <span>Giảm giá</span>
+                <span id="discount">0 VNĐ</span>
+              </div>
+              <div class="totals-row">
+                <span>Vận chuyển</span>
+                <span id="shipping">0 VNĐ</span>
+              </div>
+              <div class="totals-row grand">
+                <span>Thành tiền</span>
+                <span id="grandTotal">0 VNĐ</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Cột phải: Form Thông tin thanh toán -->
+          <aside class="checkout-section">
+            <form id="checkoutForm" class="checkout-form" novalidate>
+              <h2>Thanh toán</h2>
+
+              <div class="form-group">
+                <label for="customerName">Họ và tên</label>
+                <input
+                  type="text"
+                  id="customerName"
+                  name="customerName"
+                  placeholder="Nguyễn Văn A"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="address">Địa chỉ nhận hàng</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="3"
+                  placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Nhập số điện thoại"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="paymentMethod">Phương thức thanh toán</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                  <option value="cod">Thanh toán khi nhận hàng</option>
+                  <option value="napas">Thẻ nội địa NAPAS</option>
+                  <option value="credit">Thẻ tín dụng/Ghi nợ</option>
+                  <option value="momo">Ví MoMo</option>
+                </select>
+              </div>
+
+              <button id="placeOrder" type="submit" class="btn-primary">
+                Đặt hàng
+              </button>
+              <p class="form-note">
+                Bằng cách đặt hàng, bạn đồng ý với điều khoản mua sắm của GUNI
+                FARM.
+              </p>
+            </form>
+          </aside>
+        </main>
+
+        <template id="cart-item-template">
+          <div class="cart-item" data-id="">
+            <button class="remove-item" type="button" aria-label="Xóa sản phẩm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+            <div class="item-thumb">
+              <img src="" alt="" loading="lazy" />
+            </div>
+            <div class="item-info">
+              <h4 class="item-name"></h4>
+              <div class="item-meta">
+                <span class="item-brand"></span> •
+                <span class="item-category"></span> •
+                <span class="item-rating"></span>
+              </div>
+              <div class="item-price-qty">
+                <span class="item-price"></span>
+                <div
+                  class="qty-controls"
+                  role="group"
+                  aria-label="Điều chỉnh số lượng"
+                >
+                  <button class="qty-btn dec" type="button" aria-label="Giảm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-minus-icon lucide-minus"
+                    >
+                      <path d="M5 12h14" />
+                    </svg>
+                  </button>
+                  <input
+                    class="qty-input"
+                    type="number"
+                    min="1"
+                    step="1"
+                    value="1"
+                    aria-label="Số lượng"
+                  />
+                  <button class="qty-btn inc" type="button" aria-label="Tăng">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-plus-icon lucide-plus"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <!-- ========================= FOOTER ================================ -->
+      <div id="footer"></div>
+
+      <!-- ========================= COPYRIGHT ================================ -->
+      <div id="copyright"></div>
+    </div>
+
+    <!-- ========================= NUT TRO LAI DAU TRANG ================================ -->
+    <button onclick="scrollToTop()" id="back-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ======================= CHATBOX ============================= -->
+    <div id="chat-container">
+      <div id="chat-tab"><i class="fas fa-message"></i> Chat với chúng tôi</div>
+      <div id="chat-window">
+        <div id="chat-body">
+          <div class="chat-message bot">
+            Xin chào! Mình có thể giúp gì không?
+          </div>
+        </div>
+        <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." />
+      </div>
+    </div>
+
+    <!-- ========================= KHAI BAO THU VIEN LUCIDE ================================ -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        lucide.createIcons();
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ======================= SCRIPT ============================= -->
+    <!-- Render du lieu -->
+    <script src="../js/include.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+    <!-- Cac tuong tac -->
+    <script src="../js/index.js"></script>
+
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

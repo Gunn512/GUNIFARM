@@ -1,0 +1,340 @@
+/* import font chu */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+
+/* Khai bao bien */
+:root {
+    --color-bg: #29404a;
+    --color-header: #21323b;
+    --color-header2: #0dad23;
+    --color-bg-main: #fafafa;
+    --color-text: #222222;
+    --color-text2: #fafafa;
+    --color-text-hover: #c8f3f8;
+    --color-border: #eee;
+    --color-hover: #84bf04;
+    --color-active: #0420bf;
+    --font-heading: Gelasio, serif;
+    --font-family-base: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    --font-button: "Wix Madefor Display", sans-serif;
+}
+
+/* =========================== MAIN ========================= */
+.page-header {
+    margin-top: 15px;
+    padding: 12px 16px;
+    text-align: center;
+    background: var(--color-bg);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0px 16px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+}
+
+/* Cart (left) */
+.cart-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cart-item {
+    position: relative;
+    background: var(--card);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 12px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.remove-item {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    color: #000;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 2px;
+    transition: 0.2s;
+}
+
+.remove-item svg:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item-thumb img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-name {
+    margin: 0;
+    font-family: var(--font-button);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.item-rating {
+    color: #ffc107;
+}
+
+.item-meta {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.item-price-qty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.item-price {
+    font-family: var(--font-button);
+    color: rgb(0, 162, 255);
+    font-weight: 700;
+}
+
+.qty-controls {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.qty-btn {
+    /* width: 15px;
+    height: 15px; */
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    /* line-height: 1; */
+}
+
+.qty-btn svg:active {
+    transform: scale(0.7)
+}
+
+.qty-input {
+    width: 30px;
+    height: 32px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* =============== MA GIAM GIA ================== */
+.discount-code {
+    margin: 10px 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discount-code input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+.discount-code button {
+    padding: 10px 16px;
+    background-color: var(--color-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: 0.2s ease;
+}
+
+.discount-code button:hover {
+    background-color: var(--color-header);
+}
+
+/* ================ TONG TIEN ==================== */
+.totals-box h3 {
+    font-size: 2.3rem;
+    font-family: var(--font-button);
+    background-color: var(--color-bg);
+    padding: 8px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.totals-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+    font-size: 1.8rem;
+}
+
+.totals-row:last-child {
+    border-bottom: none
+}
+
+.totals-row.grand span:first-child {
+    font-weight: 600;
+}
+
+.totals-row.grand span:last-child {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(0, 162, 255);
+}
+
+/* Checkout (right) */
+.checkout-section {
+    margin-top: 20px;
+    height: fit-content;
+    background-image: linear-gradient(to right, var(--color-bg), var(--color-header));
+    color: #fff;
+    border-radius: 10px;
+}
+
+.checkout-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-form h2 {
+    text-align: center;
+    margin: 0 0 4px 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 1.6rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group label {
+    font-size: 1.8rem;
+}
+
+
+.btn-primary {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    background-color: rgb(32, 87, 119);
+    box-shadow: 0 5px 10px rgb(0, 162, 255);
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    transition: 0.3s;
+}
+
+.btn-primary:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.form-note {
+    margin: 0;
+    color: #fff;
+    font-size: 12px
+}
+
+/* ========================= */
+/* Phan C. Responsive */
+/* ========================= */
+/* @media (max-width: 992px) {
+    .wrap {
+        grid-template-columns: 1fr 320px
+    }
+} */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr
+    }
+
+    .checkout-section {
+        position: static
+    }
+}
