@@ -1,39 +1,3 @@
-// Script thêm class active
-console.log("Link hiện tại của trình duyệt:", window.location.href);
-
-document.addEventListener("DOMContentLoaded", function () {
-  var currentUrl = window.location.href;
-
-  var menuLinks = document.querySelectorAll(".navbar-main a, .menu-list a");
-
-  menuLinks.forEach(function (link) {
-    if (currentUrl.includes(link.href)) {
-      // Thêm class active
-      link.classList.add("active");
-
-      var parentDropdown = link.closest(".dropdown");
-      if (parentDropdown) {
-        var parentLink = parentDropdown.querySelector("a");
-        if (parentLink) {
-          parentLink.classList.add("active");
-        }
-      }
-    }
-  });
-
-  var pathName = window.location.pathname;
-  if (pathName.endsWith("/") || pathName.endsWith("index.html")) {
-    menuLinks.forEach(function (link) {
-      if (
-        link.getAttribute("href") === "index.html" ||
-        link.getAttribute("href") === "./"
-      ) {
-        link.classList.add("active");
-      }
-    });
-  }
-});
-
 //  ============================ RENDER DU LIEU ==============================
 document.addEventListener("DOMContentLoaded", () => {
   fetch("product.json")
