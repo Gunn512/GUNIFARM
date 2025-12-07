@@ -14,10 +14,18 @@ async function includeHTML(selector, file) {
   }
 }
 
+// window.addEventListener("DOMContentLoaded", () => {
+//   includeHTML("#offer", "../html/shared/_offer.html");
+//   includeHTML("#header-placeholder", "../html/shared/_header.html");
+//   includeHTML("#navbar-placeholder", "../html/shared/_navbar.html");
+//   includeHTML("#footer", "../html/shared/_footer.html");
+//   includeHTML("#copyright", "../html/shared/_copyright.html");
+// });
+
 window.addEventListener("DOMContentLoaded", () => {
-  includeHTML("#offer", "../html/shared/_offer.html");
-  includeHTML("#header-placeholder", "../html/shared/_header.html");
-  includeHTML("#navbar-placeholder", "../html/shared/_navbar.html");
-  includeHTML("#footer", "../html/shared/_footer.html");
-  includeHTML("#copyright", "../html/shared/_copyright.html");
+  includeHTML("#offer", "html/shared/_offer.html");
+  includeHTML("#header-placeholder", "html/shared/_header.html");
+  includeHTML("#navbar-placeholder", "html/shared/_navbar.html");
+  includeHTML("#footer", "html/shared/_footer.html");
+  includeHTML("#copyright", "html/shared/_copyright.html");
 });
